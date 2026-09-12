@@ -82,3 +82,112 @@ h1{margin:0;font-size:clamp(60px,9vw,100px);line-height:.94;letter-spacing:-.065
   .card-body{padding:16px 14px}
   .card h3{font-size:19px}
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-nav {
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 14px;
+  border: 1px solid var(--line2);
+  border-radius: 10px;
+  color: #dedede;
+  font-size: 13px;
+  font-weight: 650;
+  transition:
+    border-color .2s ease,
+    background .2s ease,
+    color .2s ease;
+}
+
+.about-nav:hover {
+  border-color: #55555a;
+  background: #141416;
+  color: #fff;
+}
+
+.about-section {
+  scroll-margin-top: 30px;
+}
+
+.about-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 34px 36px;
+}
+
+.about-card p {
+  max-width: 720px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.about-card p:last-of-type {
+  margin-bottom: 26px;
+}
+
+.about-card strong {
+  color: var(--text);
+}
+
+.about-contact {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--line2);
+  border-radius: 10px;
+  color: #dedede;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.about-contact:hover {
+  border-color: #55555a;
+  background: #161618;
+  color: #fff;
+}
+
+.back-top {
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+
+  .header-actions {
+    gap: 7px;
+  }
+
+  .about-nav {
+    height: 36px;
+    padding: 0 10px;
+    border-radius: 9px;
+    font-size: 11px;
+  }
+
+  .about-card {
+    padding: 24px 20px;
+    border-radius: 14px;
+  }
+
+  .about-card p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .about-contact {
+    height: 38px;
+    font-size: 12px;
+  }
+}
