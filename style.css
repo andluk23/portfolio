@@ -686,3 +686,27 @@ h1 {
     font-size: 19px;
   }
 }
+/* FORCE ALL SERVER LOGOS TO FILL THE LEFT SIDE */
+.card-media {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+
+.card-media img {
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  min-width: 100% !important;
+  min-height: 100% !important;
+
+  max-width: none !important;
+  max-height: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  object-fit: cover !important;
+}
