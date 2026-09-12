@@ -191,3 +191,15 @@ html {
     font-size: 12px;
   }
 }
+.card-media {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-media img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
+}
