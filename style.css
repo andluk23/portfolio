@@ -765,3 +765,10 @@ h1 {
   .card p { font-size: 15px; }
   .meta { font-size: 12px; }
 }
+
+
+/* SHOW FULL LOGOS ON PHONES */
+@media (max-width: 720px) {
+  .card-media { height: auto; aspect-ratio: 1 / 1; background: #17131f; }
+  .card-media img { object-fit: contain !important; }
+}
